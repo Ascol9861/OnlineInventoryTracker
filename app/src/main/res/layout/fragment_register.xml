@@ -14,7 +14,7 @@
             android:layout_width="222dp"
             android:layout_height="217dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="30dp"
             android:src="@drawable/logo"
             android:id="@+id/logo"/>
 
@@ -58,7 +58,7 @@
             />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRegister"
             android:layout_width="299dp"
             android:layout_height="wrap_content"
             android:background="#09496D"
@@ -67,6 +67,26 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/email"
             android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/RegisterBtnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:layout_below="@+id/btnRegister"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="100dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login here"
+            android:layout_toRightOf="@+id/RegisterBtnText"
+            android:layout_below="@+id/btnRegister"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#09496D"/>
 
     </RelativeLayout>
 
