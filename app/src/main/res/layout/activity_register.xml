@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+                <ImageView
+                    android:layout_width="222dp"
+                    android:layout_height="217dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/logo"
+                    android:id="@+id/logo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="30dp"
+                    android:layout_below="@+id/logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:textColor="#FF09496D"
+                    android:id="@+id/register"/>
+
+                <EditText
+                    android:id="@+id/etRegisterEmail"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/register"
+                    android:layout_marginTop="30dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etRegisterUsername"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etRegisterEmail"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Enter Username"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etRegisterPassword"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/etRegisterUsername"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/etRegisterConfirmPassword"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/etRegisterPassword"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPassword"
+                    android:hint="Confirm your password"
+                    />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="299dp"
+                    android:layout_height="wrap_content"
+                    android:background="#09496D"
+                    android:text="Register"
+                    android:textColor="#D4DDE8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/etRegisterConfirmPassword"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/RegisterBtnText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:layout_below="@+id/btnRegister"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="100dp"
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tvGoToLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login here"
+                    android:layout_toRightOf="@+id/RegisterBtnText"
+                    android:layout_below="@+id/btnRegister"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#09496D"/>
+</RelativeLayout>
